@@ -1,3 +1,86 @@
+const questions = [
+    {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5"],
+        answer: "4",
+        explanation: "2 + 2 equals 4."
+    },
+    {
+        question: "What is the capital of France?",
+        options: ["Berlin", "London", "Paris"],
+        answer: "Paris",
+        explanation: "The capital of France is Paris."
+    }
+];
+
+let currentQuestionIndex = 0;
+let timer;
+
+function startQuiz() {
+    document.getElementById("start-test").style.display = "none";
+    document.getElementById("quiz-container").style.display = "block";
+    loadQuestion();
+}
+
+function loadQuestion() {
+    const questionElement = document.getElementById("question");
+    const optionsElement = document.getElementById("options");
+    const explanationElement = document.getElementById("explanation");
+    const timerElement = document.getElementById("timer");
+
+    questionElement.textContent = questions[currentQuestionIndex].question;
+    optionsElement.innerHTML = "";
+    explanationElement.style.display = "none";
+    timerElement.textContent = "";
+
+    questions[currentQuestionIndex].options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.onclick = () => selectAnswer(option);
+        optionsElement.appendChild(button);
+    });
+}
+
+function selectAnswer(selectedOption) {
+    const correctAnswer = questions[currentQuestionIndex].answer;
+    const explanationElement = document.getElementById("explanation");
+    const timerElement = document.getElementById("timer");
+
+    if (selectedOption === correctAnswer) {
+        explanationElement.textContent = `Correct! ${questions[currentQuestionIndex].explanation}`;
+    } else {
+        explanationElement.textContent = `Incorrect. ${questions[currentQuestionIndex].explanation}`;
+    }
+
+    explanationElement.style.display = "block";
+    document.getElementById("next-question").style.display = "none";
+    startTimer(5, timerElement);
+}
+
+function startTimer(seconds, timerElement) {
+    let timeLeft = seconds;
+
+    timer = setInterval(() => {
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            document.getElementById("next-question").style.display = "block";
+        } else {
+            timerElement.textContent = `Next question in ${timeLeft} seconds...`;
+            timeLeft--;
+        }
+    }, 1000);
+}
+
+function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        loadQuestion();
+    } else {
+        alert("Quiz completed!");
+        document.getElementById("quiz-container").style.display = "none";
+    }
+      }
+
 const topicsContent = {
   "introduction": {
     title: "Introduction",
