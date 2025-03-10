@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CHM102</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHM102 - Introductory Chemistry II</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>CHM102 - Introductory Chemistry II</h1>
+    <p>Explore the fundamental concepts of chemistry, including qualitative analysis, chemical bonding, and organic chemistry.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="course-container">
+    <!-- Course Information -->
+    <section class="course-info">
+      <p><strong>Course Code:</strong> CHM 102</p>
+      <p><strong>Course Title:</strong> Introductory Chemistry II</p>
+      <p><strong>Credit Load:</strong> 3 + 1 + 0 (4 Units)</p>
+      <p><strong>Semester:</strong> Second Semester</p>
+    </section>
+
+    <!-- Topics List Section -->
+    <section class="topics-list" id="topics-section">
+      <h2>Course Outline</h2>
+      <ul>
+        <li><a href="#" class="topic-link" data-topic="qualitative-analysis">Qualitative Analysis (Inorganic)</a>
+          <ul>
+            <li>Tests for simple cations and anions.</li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="identification-organic-compounds">Identification of Organic Compounds</a>
+          <ul>
+            <li>Isolation and purification.</li>
+            <li>Qualitative analysis: Tests for common elements (C, H, N, S, halogens, etc.).</li>
+            <li>Quantitative analysis using Dumas, Kjeldahl's, and Carius methods.</li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="chemical-bonding">Chemical Bonding</a>
+          <ul>
+            <li>Why and how atoms combine?</li>
+            <li>The molecule and chemical bonding; electrons in molecules.</li>
+            <li>Ionic, covalent, dative and complex bonding; polarity of bonds.</li>
+            <li>Co-ordinate bonds; metallic bonds; basic crystalline structure (e.g., NaCl) and metallic lattices.</li>
+            <li>Hybridization and resonance in chemical bonding.</li>
+            <li>Chemistry of Hydrogen, Noble Gases, Alkali Metals (Group I) and the Alkaline Earth Metals (Group II).</li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="intro-organic-chemistry">Introduction to Organic Chemistry</a>
+          <ul>
+            <li>Introduction to the term "Organic Chemistry."</li>
+            <li>Hybridization in Carbon - sp3, sp2, and sp hybridization.</li>
+            <li>Physical properties as related to structures - bond length, strength, rotation, etc.</li>
+            <li>Electrophiles and Nucleophiles - Examples to include acids and bases.</li>
+            <li>Homolytic and Heterolytic fission of bonds.</li>
+            <li>Factors influencing organic reactions - inductive and mesomeric effects, steric factors, etc.</li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="organic-chemistry">Organic Chemistry</a>
+          <ul>
+            <li>Homologous series and Functional groups' chemistry.</li>
+            <li>Types of Organic reactions.</li>
+            <li>Isomerism - Structural, Geometric and Optical Isomers.</li>
+            <li>Chemistry of Hydrocarbons (alkanes, alkenes, alkynes, alkyl halides and Grignard reagents):
+              <ul>
+                <li>Nomenclature (IUPAC rules to be treated under Alkanes).</li>
+                <li>Preparation.</li>
+                <li>Physical properties.</li>
+                <li>Chemical reactions with simple mechanisms where applicable.</li>
+                <li>Applications.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="main-group-chemistry-iii-v">Main Group Chemistry (Groups III - V)</a>
+          <ul>
+            <li>Trends in properties of elements (structures, ionization energy, physical and chemical properties).</li>
+            <li>Properties of selected types of compounds - hydrides, oxides, acids, and bases.</li>
+            <li>Chemistry of B and Al; C and Pb; N and Bi.</li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="main-group-chemistry-vi-vii-transition-metals">Main Group Chemistry (Groups VI and VII) and Transition Metal Chemistry</a>
+          <ul>
+            <li>MAIN GROUP CHEMISTRY (Groups VI and VII):
+              <ul>
+                <li>Trend in properties of elements.</li>
+                <li>Properties of selected types of compounds.</li>
+                <li>Chemistry of O and S; F and Cl.</li>
+              </ul>
+            </li>
+            <li>TRANSITION SERIES:
+              <ul>
+                <li>Properties of elements and compounds of d-block elements, lanthanides, and actinides.</li>
+                <li>Electronic configuration; Complexes and IUPAC nomenclature of complexes.</li>
+                <li>Chemistry of Cr, Fe, Co, Ni and Cu; particularly of the most common oxidation states.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="alcohols-ethers-aldehydes-ketones">Chemistry of Alcohols, Ethers, Aldehydes and Ketones; Carboxylic Acids, Derivatives and Amines</a>
+          <ul>
+            <li>Nomenclature (IUPAC).</li>
+            <li>Preparation, Structure, Physical properties and general reactions.</li>
+            <li>Introduction to Aromatic compounds.</li>
+          </ul>
+        </li>
+        <li><a href="#" class="topic-link" data-topic="carbohydrates-proteins-lipids">Carbohydrates, Proteins and Lipids</a>
+          <ul>
+            <li>Simple treatment of carbohydrates - monosaccharides (e.g. glucose and fructose), disaccharides, and polysaccharides.</li>
+            <li>Proteins - amino acids, peptide bonds etc.</li>
+            <li>Lipids - Fats and Oils, Soap and Detergent.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Topic Details Section -->
+    <section class="topic-container hidden" id="topic-details-section">
+      <button class="btn secondary" id="back-button">Back to Topics</button>
+      <div id="topic-content">
+        <!-- Topic content will load here dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="102-script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
