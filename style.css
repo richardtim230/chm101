@@ -277,3 +277,32 @@ header.header p {
   display: none;
 
 }
+
+
+.lecture-content {
+    margin-bottom: 20px;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#options button {
+    display: block;
+    margin: 5px 0;
+}
+
+#explanation {
+    margin-top: 10px;
+    font-style: italic;
+    color: green;
+}
+
+#timer {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#next-question {
+    margin-top: 20px;
+}
