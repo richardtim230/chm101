@@ -57,6 +57,17 @@
             <li>Co-ordinate bonds; metallic bonds; basic crystalline structure (e.g., NaCl) and metallic lattices.</li>
             <li>Hybridization and resonance in chemical bonding.</li>
             <li>Chemistry of Hydrogen, Noble Gases, Alkali Metals (Group I) and the Alkaline Earth Metals (Group II).</li>
+              <!-- Start Test Button -->
+    <button id="start-test" onclick="startQuiz()">Start Test</button>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" style="display: none;">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="explanation" style="display: none;"></div>
+        <div id="timer"></div>
+        <button id="next-question" onclick="nextQuestion()" style="display: none;">Next</button>
+    </div>
           </ul>
         </li>
         <li><a href="#" class="topic-link" data-topic="intro-organic-chemistry">Introduction to Organic Chemistry</a>
