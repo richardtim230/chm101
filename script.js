@@ -79,7 +79,10 @@ function nextQuestion() {
         alert("Quiz completed!");
         document.getElementById("quiz-container").style.display = "none";
     }
-      }
+}
+
+// Event listener for the "Start Test" button
+document.getElementById("start-test").addEventListener("click", startQuiz);
 
 const topicsContent = {
   "introduction": {
